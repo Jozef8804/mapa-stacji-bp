@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Mapy</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Mapy BP</h1>
+    <div id="map"></div>
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        console.log('Test mapy - inicjalizacja...');
+        
+        // Tworzenie mapy
+        const map = L.map('map').setView([52.237049, 21.017532], 6);
+        console.log('Mapa utworzona');
+        
+        // Dodanie warstwy
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        console.log('Warstwa dodana');
+        
+        // Dodanie testowego markera
+        const marker = L.marker([52.4064, 16.9252]).addTo(map);
+        marker.bindPopup('Test - Poznań').openPopup();
+        console.log('Marker testowy dodany');
+        
+        console.log('Test zakończony pomyślnie!');
+    </script>
+</body>
+</html>
