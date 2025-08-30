@@ -1,73 +1,49 @@
 # Mapa Stacji BP w Polsce
 
-Interaktywna mapa wszystkich stacji BP w Polsce stworzona w HTML, CSS i JavaScript z wykorzystaniem biblioteki Leaflet.
+Interaktywna mapa wszystkich 88 stacji BP w Polsce z funkcją kopiowania adresów.
 
-## Funkcje
+## 🚀 Jak wdrożyć na GitHub Pages:
 
-- **Interaktywna mapa** z 88 stacjami BP w Polsce
-- **Czerwone markery** dla każdej stacji
-- **Popup z informacjami** po kliknięciu w marker (nazwa, adres, miasto, kod pocztowy)
-- **Panel informacyjny** z liczbą stacji i miast
-- **Responsywny design** - działa na komputerach i urządzeniach mobilnych
-- **Minimalistyczny i nowoczesny** interfejs
+### 1. Utwórz repozytorium na GitHub:
+- Idź na [github.com](https://github.com)
+- Kliknij "New repository"
+- Nazwij np. "mapa-stacji-bp"
+- Zostaw jako publiczne
+- **NIE** zaznaczaj "Add a README file"
 
-## Technologie
-
-- **HTML5** - struktura strony
-- **CSS3** - stylowanie i responsywność
-- **JavaScript (ES6+)** - funkcjonalność mapy
-- **Leaflet.js** - biblioteka do tworzenia interaktywnych map
-- **OpenStreetMap** - darmowe mapy
-- **Nominatim API** - geokodowanie adresów
-
-## Jak uruchomić
-
-1. **Pobierz pliki** do jednego folderu:
-   - `index.html`
-   - `script.js`
-   - `README.md`
-
-2. **Otwórz plik** `index.html` w przeglądarce internetowej
-
-3. **Czekaj na załadowanie** - mapa automatycznie geokoduje wszystkie adresy i doda markery
-
-## Struktura plików
-
-```
-mapa-stacji-bp/
-├── index.html      # Główny plik HTML
-├── script.js       # JavaScript z danymi i funkcjonalnością
-└── README.md       # Ten plik z instrukcjami
+### 2. Wypchnij kod na GitHub:
+```bash
+git remote add origin https://github.com/TWOJA_NAZWA_UZYTKOWNIKA/mapa-stacji-bp.git
+git branch -M main
+git push -u origin main
 ```
 
-## Dane
+### 3. Włącz GitHub Pages:
+- Idź do Settings → Pages
+- W "Source" wybierz "Deploy from a branch"
+- W "Branch" wybierz "main" i "/ (root)"
+- Kliknij "Save"
 
-Mapa zawiera 88 stacji BP z następującymi informacjami:
-- Nazwa stacji
-- Pełny adres
-- Miasto
-- Kod pocztowy
+### 4. Twój link będzie:
+```
+https://TWOJA_NAZWA_UZYTKOWNIKA.github.io/mapa-stacji-bp/
+```
 
-## Uwagi techniczne
+## 🌐 Alternatywnie - Netlify (jeszcze prostsze):
 
-- **Geokodowanie** - adresy są automatycznie konwertowane na współrzędne geograficzne
-- **API limit** - używamy darmowego API z ograniczeniami, więc ładowanie może trwać kilka sekund
-- **Offline** - po załadowaniu mapa działa offline
-- **Responsywność** - dostosowuje się do różnych rozmiarów ekranu
+### 1. Idź na [netlify.com](https://netlify.com)
+### 2. Przeciągnij folder z plikami na stronę
+### 3. Dostaniesz link automatycznie!
 
-## Możliwe rozszerzenia
+## 📋 Funkcje mapy:
+- ✅ 88 stacji BP w Polsce
+- ✅ Sortowanie od najbliższej do najdalszej od Tęgoborza
+- ✅ Kopiowanie adresów do schowka
+- ✅ Zmiana koloru markerów po skopiowaniu
+- ✅ Lista wszystkich stacji w sidebarze
+- ✅ Automatyczne rozsuwanie markerów blisko siebie
 
-- Wyszukiwarka stacji
-- Filtrowanie po województwach
-- Routing do stacji
-- Geolokalizacja użytkownika
-- Eksport danych
-- Dodanie logo BP
-
-## Licencja
-
-Projekt jest dostępny na licencji MIT. Dane stacji BP są własnością BP Polska.
-
-## Autor
-
-Mapa stworzona jako projekt demonstracyjny z wykorzystaniem darmowych technologii webowych.
+## 🛠️ Technologie:
+- HTML5, CSS3, JavaScript (ES6+)
+- Leaflet.js - interaktywna mapa
+- OpenStreetMap - dane mapy
